@@ -36,6 +36,9 @@ figure{
     margin: 0em;
 }
 
+/* la especificidad de los tag no tienen que ser a nivel de etiqueta, deberias usar mas las clases 
+porque al ser muy especifico luego tendras problemas a la hora de maquetar, la especifidad esta reservada
+para los pseudo-elementos (:before, :after, :hover, etc) ya que no se pueden acceder a ellos directamente. */
 input{
     border-radius: 6px;
     height: 3rem;
@@ -436,3 +439,16 @@ ul{
   } 
 
 
+
+  /* cuando se utiliza mucho flex , una idea buena es de crear clases especificas como 
+  hacen framework de css, ejemplo:  
+  .u-flex {
+    display:flex;
+  }
+
+  .u-flex-justify-content-between {
+    justify-content: space-between;
+  }
+
+  y para grid igual, te ahorrarias mucho código
+  */
